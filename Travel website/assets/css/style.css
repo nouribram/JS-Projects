@@ -69,6 +69,23 @@ body{
  0%{ transform: translateY(-10px);}   
  100%{ transform: translateY(0);}   
 }
-.preloader-inner{
-    position: relative;
+.preloader-inner{ position: relative; }
+
+.preloader-inner::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 10px;
+    background-color:darkgray ;
+    filter: blur(4px);
+    z-index: -1;
+    animation: dropShadow 800ms ease-in-out infinite alternate;
+}
+@keyframes dropShadow {
+    0%{ width: 40%;}
+    100%{ width: 80%;}
+    
 }
