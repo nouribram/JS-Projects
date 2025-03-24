@@ -58,7 +58,7 @@ body{
     z-index: 6;
     transition: 1;
 }
-.preloader .remove{
+.remove{
     visibility: hidden;
     opacity: 0;
 }
