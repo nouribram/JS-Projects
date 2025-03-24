@@ -62,3 +62,13 @@ body{
     visibility: hidden;
     opacity: 0;
 }
+.preloader .img{
+    animation: bounce 800ms ease-in-out infinite alternate;
+}
+@keyframes bounce {
+ 0%{ transform: translateY(-10px);}   
+ 100%{ transform: translateY(0);}   
+}
+.preloader-inner{
+    position: relative;
+}
