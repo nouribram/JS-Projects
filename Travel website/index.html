@@ -7,6 +7,8 @@
     <meta name="title" content="Travel">
     <meta name="description" content="this travel website">
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="preload" as="image" href="./assets/images/banner_img_1.webp">
+    <link rel="preload" as="image" href="./assets/images/preloader.gif">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -20,7 +22,7 @@
     <header class="header" data-header>
         <div class="container">
             <a href="#" class="logo">
-                <img src="./assets/images/logo.png" width="187" height="38" alt="logo">
+                <img src="./assets/images/logo.png" width="187" height="138" alt="logo">
             </a>
             <nav class="navbar" data-navbar>
                <div class="navbar-top">
@@ -87,11 +89,17 @@
                 </a>
                 <button class="hero-btn">
                   <div class="btn-img">
-                    <img src="./" alt="story" width="100" height="100" class="img-cover">
+                    <img src="./assets/images/banner_img_1.webp" alt="story" width="100" height="100" class="img-cover">
+                    <ion-icon name="play" aria-hidden="true"></ion-icon>
+                    <p class="text">Watch our story </p>
                   </div>
                 </button>
               </div>
             </div>
+              
+            <figure class="hero-banner">
+              <img src="./assets/images/banner_img_1.webp" alt="banner" width="631" height="735" class="w-100">
+            </figure>  
          </div>
        </section>
     </article>

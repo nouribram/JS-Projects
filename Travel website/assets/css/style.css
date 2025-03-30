@@ -237,3 +237,10 @@ body.nav-active { overflow: hidden;}
     transition: 0.5s;
 }
 .login-btn:is(:hover, :focus-visible) { opacity: 0.8;}
+
+/* **********************
+    Hero
+ ********************   */
+ .hero {
+    padding-block-start: 150px;
+ }
