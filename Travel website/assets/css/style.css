@@ -160,7 +160,15 @@ body {
   --border-color: var(--viridian-green);
 }
 
+.section { padding-block: var(--section-padding); }
 
+.section-subtitle {
+    font-family: var(--ff-comforter-brush);
+    color: var(--mikado-yellow);
+    font-size: var(--fs-3);
+}
+
+.w-100 { width: 100%; }
 /************
 ** Header **
 *************/
@@ -229,5 +237,39 @@ body {
   
   .navbar-link:is(:hover, :focus) { border-color: var(--white-1); }
   
-  
-  
+  /************
+** Hero **
+*************/
+.shape { display: none; }
+
+.hero {
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom left, top right;
+}
+
+.hero-content { margin-bottom: 50px; }
+
+.hero .section-subtitle { margin-bottom: 15px; }
+
+.hero-title {
+    color: var(--oxford-blue);
+    font-size: var(--fs-1);
+    font-family: var(--ff-abril-fatface);
+    font-weight: var(--fw-500);
+    line-height: 1.2;
+    max-width: 11ch;
+    margin-bottom: 15px;
+}
+
+.hero-text {
+    color: var(--black-coral);
+    font-size: var(--fs-7);
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}

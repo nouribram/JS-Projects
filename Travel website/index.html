@@ -19,56 +19,139 @@
 <body>
 
  <!--- header -->
-<header class="header" data-header>
-  <div class="container">
+   
+  <header class="header" data-header>
+    <div class="container">
 
-    <a href="#">
-       <h1 class="logo">Tourist</h1> 
-    </a>
+      <a href="#">
+        <h1 class="logo">Tourest</h1>
+      </a>
 
-    <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
-      <ion-icon name="menu-outline" class="open"></ion-icon>
-      <ion-icon name="close-outline" class="close"></ion-icon>
-    </button>
+      <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </button>
 
-    <nav class="navbar">
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Tours</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Destinations</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <a href="#" class="btn btn-secondary">Booking Now</a>
+
+      </nav>
+
+    </div>
+  </header>
+
+  
+  <!-- hero section -->
+   <main>
      
-      <ul class="navbar-list">
-         
-        <li>
-          <a href="#" class="navbar-link">Home</a>
-        </li>
+    <article>
 
-        <li>
-          <a href="#" class="navbar-link">About us</a>
-        </li>
+       <section class="section hero" style="background-image: url('./assets/images/banner_img_1.webp');">
 
-        <li>
-          <a href="#" class="navbar-link">Tours</a>
-        </li>
+        <div class="container">
 
-        <li>
-          <a href="#" class="navbar-link">Places</a>
-        </li>
+          <img src="./assets/images/banner_img_1.webp" width="61" height="61" alt="" class="shape shape-1">
+          
+          <img src="./assets/images/banner_img_1.webp" width="56" height="74" alt="" class="shape shape-2">
 
-        <li>
-          <a href="#" class="navbar-link">Blog</a>
-        </li>
+          <img src="./assets/images/banner_img_1.webp" width="57" height="72" alt="" class="shape shape-3">
 
-        <li>
-          <a href="#" class="navbar-link">Contact us</a>
-        </li>
+          <div class="hero-content">
 
+            <p class="section-subtitle">Explore the world around you</p>
 
-      </ul>
-       
-      <a href="#" class="btn btn-secondary">Booking Now</a>
-    </nav>
+            <h2 class="h1 hero-title">Travel Agency</h2>
 
-  </div>
-</header>
+            <p class="hero-text">
+              I travel around the world to find the piece every where
+            </p>
 
+            <div class="btn-group">
+              <a href="#" class="btn btn-primary">Contact Us</a>
 
+              <a href="#" class="btn btn-outline">Learn More</a>
+            </div>
+          </div>
+           
+          <figure class="hero-banner">
+              <img src="" alt="" width="686" height="812" loading="lazy"  class="w-100"> 
+          </figure>
+
+        </div>
+       </section>
+<!-- places -->
+      
+       <section class="section destination">
+         <div class="container">
+
+           <p class="section-subtitle">
+              
+             <h2 class="h2 section-title">choose your place</h2>
+
+             <ul class="destionation-list">
+                <li class="w-50">
+                  <a href="#" class="destionation-card">
+                     <figure class="card-banner">
+                        <img src="./assets/images/1.jpg" width="1140" height="1100" loading="lazy" alt="Male">
+                     </figure>
+
+                     <div class="card-container">
+                       <p class="card-subtitle">Male</p>
+                       <h3 class="h3 card-title">Maldives</h3>
+                     </div>
+                  </a>
+                </li>
+                <li class="w-50">
+                  <a href="#" class="destionation-card">
+                     <figure class="card-banner">
+                        <img src="./assets/images/2.webp" width="1140" height="1100" loading="lazy" alt="Male">
+                     </figure>
+
+                     <div class="card-container">
+                       <p class="card-subtitle">Male</p>
+                       <h3 class="h3 card-title">Maldives</h3>
+                     </div>
+                  </a>
+                </li>
+             </ul>
+
+           </p>
+
+         </div>
+       </section>
+
+    </article>
+
+   </main>
 
 
 <script src="./assets/js/script.js"></script>
