@@ -480,4 +480,46 @@
     #ABOUT
   \*-----------------------------------*/
 
-  .about-content
+  .about-content { margin-bottom: 50px; }
+
+  .about .section-subtitle { margin-bottom: 10px; }
+
+  .about .section-title { margin-bottom:  20px; }
+
+  .about-text,
+   .about-item-text {
+    color: var(--battleship-gray);
+    font-size: var(--fs-6);
+    line-height: 1.7;
+  }
+
+  .about-text { margin-bottom: 30px; }
+
+  .about-list {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .about-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .about-item-icon {
+    background: var(--viridian-green);
+    color: var(--white-1);
+    font-size: 26px;
+    padding: 16px;
+    border-radius: 50%;
+    margin-top: 5px;
+  }
+
+  .about-item-title {
+    color: var(--granite-gray);
+    font-weight: var(--fw-600);
+    margin-bottom: 5px;
+  }
+
+  
