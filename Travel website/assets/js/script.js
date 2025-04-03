@@ -1,6 +1,8 @@
 'use strict';
 
-/* Navbar toggle */
+/**
+ * navbar toggle
+ */
 
 const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
 const header = document.querySelector("[data-header]");
@@ -10,10 +12,13 @@ navToggleBtn.addEventListener("click", function () {
   header.classList.toggle("active");
 });
 
-/* go to top */
+/**
+ * show go top btn
+ */
 
 const goTopBtn = document.querySelector("[data-go-top]");
 
 window.addEventListener("scroll", function () {
-   window.scrollY > 500 ? goTopBtn.classList.add("active") : goTopBtn.classList.remove("active");
+  window.scrollY >= 500 ? goTopBtn.classList.add("active")
+    : goTopBtn.classList.remove("active");
 });
