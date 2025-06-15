@@ -26,7 +26,7 @@ body {
     width: 300px;
     height: 400px;
     transition: width 0.5s, height  0.5s;
-    transition-delay: 0s, 0.75s, ;
+    transition-delay: 0s, 0.75s;
 }
 .navigation .userBx{
     position: relative;
@@ -74,6 +74,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .navigation .menuToggle::before{
     content: '';
     position: absolute;
@@ -84,6 +85,12 @@ body {
     box-shadow: 0 10px #555;
     transition: 0.5s;
 }
+
+.navigation.active .menuToggle::before {
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 #555;
+}
+
 .navigation .menuToggle::after{
     content: '';
     position: absolute;
@@ -98,14 +105,9 @@ body {
     transform: translateY(0px) rotate(45deg);
     box-shadow: 0 0 #555;
 }
-.navigation.active .menuToggle::before
-{
-    transform: translateY(0px) rotate(45deg);
-    box-shadow: 0 0 #555;
-}
-.navigation.active .menuToggle::after
-{
-    transform: rotateY(0px) rotate(-45deg);
+
+.navigation.active .menuToggle::after{
+      transform: rotate(-45deg);
 }
 .menu {
     position: absolute;
@@ -132,4 +134,14 @@ body {
 }
 .menu li a ion-icon{
   font-size: 1.5em;
+}
+
+.navigation.active {
+    animation: bounceOpen 0.4s ease;
+}
+
+@keyframes bounceOpen {
+    0% { transform: scale(0.95); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
 }
