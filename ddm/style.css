@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ;
+}
+body {
+    min-height: 100vh;
+    background: linear-gradient(45deg, #4e65ff, #92effd);
+}
+.navigation {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 120px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+}
+.navigation .userBx{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+}
+.navigation .userBx .imgBx {
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    background-color: #000;
+    border-radius: 50%;
+    border: 10px solid #fff;
+}
